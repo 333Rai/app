@@ -1,0 +1,32 @@
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: open 500ms ease forwards;
+	z-index: 11;
+}
+.modal.closed {
+	animation: close 500ms ease-in-out forwards;
+}
+
+@keyframes open {
+	from {
+		margin-top: -777px;
+		opacity: 0;
+	}
+	to {
+		margin: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes close {
+	to {
+		margin-top: -777px;
+		opacity: 0;
+	}
+}

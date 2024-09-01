@@ -1,0 +1,30 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100vw;
+	height: 100vh;
+	animation: open 500ms ease forwards;
+}
+.backdrop.closed {
+	transition: opacity 500ms ease;
+	animation: close 500ms ease forwards;
+}
+
+@keyframes open {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes close {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,37 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+	padding: 44px 0;
+	color: #454545;
+}
+.grid__item {
+	background-color: #b2a5ff;
+	padding: 15px;
+	border-radius: 15px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.grid__item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	max-height: 250px;
+	min-height: 220px;
+	border-radius: 15px;
+}
+.grid__item p {
+	margin-top: auto;
+}
+.grid__button {
+	/* margin-top: auto; */
+	background-color: #3104ff;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+}
